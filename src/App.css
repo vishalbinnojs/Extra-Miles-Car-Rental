@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Outfit",Arial, Helvetica ;
+    max-width:100%;
+}
+:root{
+    --primaryColor:#FDA50D;
+    --primaryBgColor:#FDA50D;
+--hoverPrimaryColor:#FDA50D;
+--hoverPrimaryBgColor:#FDA50D;
+--modalBgColor: rgba(0, 0, 0, 0.85);
+--footerBgColor:#2c3e50;
+}
