@@ -25,7 +25,7 @@
   transition: opacity 3s ease, transform 0.8s ease;
 }
 
-/* When active slide */
+/* When active slide(.swiper-slide-active automatically applies on SwiperSlide component)*/
 .swiper-slide-active .text-container {
   opacity: 1;
   transform: translateX(0px);
@@ -157,4 +157,98 @@
     height: 60%;
     width: 60%;
   }
+}
+
+/* Brand Logo Section */
+
+.home-brands-section {
+  padding: 5rem 5rem;
+}
+.background{
+  background:#f9f9f9;
+  
+}
+
+.home-brands-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.home-brands-tag {
+  display: inline-block;
+  width: fit-content;
+  color: var(--primaryColor);
+  background: #f9f9f9;
+  letter-spacing: 1px;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+.background-white{
+  background:#fff;
+}
+.home-brands-title {
+ font-size: 3rem;
+  font-weight: 500;
+}
+
+.home-brands-btn {
+  border: 1px solid black;
+  color:#fff;
+  background: #111;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.home-brands-btn:hover {
+  background: #333;
+  color: white;
+}
+
+.home-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+/* +++++++++ Card css from Card component ++++++ */
+
+@media(max-width:768px){
+    .home-brands-section{
+        padding:4.5rem 3.5rem;
+    }
+}
+@media(max-width:600px){
+    .home-brands-section{
+        padding:4.5rem 3rem;
+    }
+    .home-brands-header {
+      text-align:center;
+      width:100%;
+    }
+    .home-brands-tag{
+        margin-bottom: 1.5rem; 
+    }
+    .home-brands-btn{
+        display:inline-block;
+        width:fit-content;
+        margin:0 auto;
+    }
+    
+}
+@media(max-width:480px){
+    .home-brands-section{
+        padding:3rem 1.5rem;
+    }
+    .home-brands-title{
+        font-size:2.5rem;
+    }
+   
 }
