@@ -1,21 +1,16 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({ brands,carTypes }) => {
+const Card = ({ brands}) => {
   return (
     <>
-      {brands && brands.map((brand, index) => (
+      {brands.map((brand, index) => (
         <div key={index} className="home-brand-card">
-          <img src={brand.logo} alt={brand.name} className="logo-img car-img" />
-          <p>{brand.name}</p>
+          <img src={brand.img} alt={brand.carType} className="logo-img car-img" />
+          <p>{brand.carType}</p>
         </div>
       ))}
-      {carTypes && carTypes.map((item, index) => (
-        <div key={index} className="home-brand-card">
-          <img src={item.img} alt={item.carType} className="logo-img " />
-          <p>{item.carType}</p>
-        </div>
-      ))}
+     
     </>
   );
 };

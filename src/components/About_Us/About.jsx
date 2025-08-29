@@ -1,4 +1,4 @@
-import  { useState, useRef, useEffect } from "react";
+import  {  useRef, useEffect } from "react";
 import {
   FaGlobe,
   FaBars,
@@ -18,10 +18,16 @@ import Member2 from "../../assets/images/team-image-2.png"
 import Member3 from "../../assets/images/team-image-3.png"
 import Member4 from "../../assets/images/team-image-4.png"
 
+import bgOne from "../../assets/images/video-bg-1.png";
+
+import Video from "./Video_Section/Video"
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import {  Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+
 
 const featureCardData = [
   {
@@ -136,7 +142,7 @@ const About = () => {
   const containerRef = useRef(null);
   const scrollRef = useRef(null);
 
-  const [playVideo, setPlayVideo] = useState(false);
+  // const [playVideo, setPlayVideo] = useState(false);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -163,14 +169,6 @@ const About = () => {
     };
   }, []);
 
-const closeVideo = (e) =>{
-if(e.target.classList.contains("overlay-active")){
-  setPlayVideo(!playVideo)
-}
-}
-
-
-
   return (
     <>
       <div className="about-hero">
@@ -195,7 +193,7 @@ if(e.target.classList.contains("overlay-active")){
 
           <div className="section-heading">
             <div className="section-title">
-              <h4>Brands</h4>
+              <h4>BRANDS</h4>
               <h2>Planning A Trip Should Be Very Exciting Adventure</h2>
             </div>
             <div className="brands-features">
@@ -219,7 +217,7 @@ if(e.target.classList.contains("overlay-active")){
       {/********** * How It Works Section **********/}
       <section className="how-it-works">
         <div className="container">
-          <h4>Popular Cars</h4>
+          <h4>POPULAR CARS</h4>
 
           <h2 className="section-title">How It Works</h2>
           <div className="steps-container">
@@ -248,39 +246,14 @@ if(e.target.classList.contains("overlay-active")){
           </div>
         </div>
       </div>
+
       {/* video section */}
 
-      <section className="video-banner">
-        <div className="background-img"></div>
+      
+        <Video bgImage = {`${bgOne}`}/>
+      
 
-        <div className="overlay"></div>
 
-        {!playVideo && (
-          <div className="play-button-container">
-            <span className="ripple"></span>
-            <div className="play-button" onClick={() => setPlayVideo(true)}>
-              <span className="play-icon"></span>
-            </div>
-          </div>
-        )}
-
-        {playVideo && (
-          <div className="overlay-active slide-up" onClick={closeVideo}>
-            <div className="video-wrapper " onClick={(e)=>e.stopPropagation()}>
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/h9dTYG1y21k?si=7_kITA84KqxJPS3u"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        )}
-      </section>
 
 
       {/* Team Section */}
