@@ -1,3 +1,4 @@
+
 .faq-hero {
   min-height: 90vh;
   background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/contact-bg.png") no-repeat 50% center/cover;
@@ -87,7 +88,15 @@ display:flex;
   
   padding: 10px 30px 20px;
   color: #555;
+  max-height:0;
+  opacity:0;
+  overflow:hidden;
+  transition:max-height 0.9s ease, opacity 0.9s ease;
   
+}
+.faq-answer.open{
+  max-height:200px;
+  opacity:1;
 }
 
 .faq-answer p{

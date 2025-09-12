@@ -91,7 +91,7 @@ const Home = () => {
   const featuredCars = [
     {
       image: "/src/assets/images/featured-car-1.jpg",
-      title: "Toyota Land Cruiser",
+      title: "BMW 740L Series",
       rating: 4.8,
       description:
         "Three-row SUV with a modern design, upscale interior, and safety features",
@@ -101,7 +101,7 @@ const Home = () => {
     },
     {
       image: "/src/assets/images/featured-car-2.jpg",
-      title: "Nissan GTR Turbo",
+      title: "BMW M5 Competition",
       rating: 4.9,
       description:
         "Iconic muscle car with the classic, powerful engines, and agile handling",
@@ -114,14 +114,14 @@ const Home = () => {
       title: "Mitsubishi Portan",
       rating: 4.5,
       description:
-        "Compact yet spacious, the Mitsubishi Portan is perfect for city drives and family trips",
+        "Compact yet spacious, the Mitsubishi Portan is perfect for city and family trips",
       doors: "2 Doors",
       suitcase: "1 Large, 2 Small",
       passengers: "06",
     },
     {
       image: "/src/assets/images/featured-car-1.jpg",
-      title: "Toyota Land Cruiser",
+      title: "BMW 740L Series",
       rating: 4.8,
       description:
         "Three-row SUV with a modern design, upscale interior, and safety features",
@@ -131,7 +131,7 @@ const Home = () => {
     },
     {
       image: "/src/assets/images/featured-car-2.jpg",
-      title: "Nissan GTR Turbo",
+      title: "BMW M5 Competition",
       rating: 4.9,
       description:
         "Iconic muscle car with the classic, powerful engines, and agile handling",
@@ -144,7 +144,7 @@ const Home = () => {
       title: "Mitsubishi Portan",
       rating: 4.5,
       description:
-        "Compact yet spacious, the Mitsubishi Portan is perfect for city drives and family trips",
+        "Compact yet spacious, the Mitsubishi Portan is perfect for city and family trips",
       doors: "2 Doors",
       suitcase: "1 Large, 2 Small",
       passengers: "06",
@@ -299,7 +299,6 @@ const Home = () => {
           }}
           speed={5000}
           loop={true}
-          lazy={true}
         >
           {swiperCars.map((car, index) => (
             <SwiperSlide key={index}>

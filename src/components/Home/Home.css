@@ -416,11 +416,10 @@
 
 }
  .news-img-container img{
-  height:100%;
   width:100%;
   object-fit:cover;
   border-radius:12px;
-  transition: all 0.3s ease-out;
+  transition: transform 0.4s ease;
 }
 .news-card:hover img{
   cursor:pointer;

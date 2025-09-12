@@ -25,7 +25,7 @@ function App() {
       <Route path="/privacy_policy" element={<Privacy/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/faqs" element={<Faqs/>}/>
-      {/* <Route path="/test" element={<Test/>}/> */}
+      <Route path="/test" element={<Test/>}/>
       </Routes>
 
       <Footer />

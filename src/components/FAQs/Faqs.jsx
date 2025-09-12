@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import "./Faqs.css";
 
+
 const Faqs = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const faqs = [
     {
-      id:1,
+      id: 1,
       question: "What is about rental car deals?",
-      answer: "The prices were reasonable, and the staff was friendly and accommodating. Definitely my go-to car rental company. Outstanding Customer Service!",
+      answer:
+        "The prices were reasonable, and the staff was friendly and accommodating. Definitely my go-to car rental company. Outstanding Customer Service!",
     },
     {
       question: "In which areas do you operate?",
@@ -18,7 +20,8 @@ const Faqs = () => {
     },
     {
       question: "Do you rent to international visitors?",
-      answer: "Yes, we rent cars to international visitors with valid documents.",
+      answer:
+        "Yes, we rent cars to international visitors with valid documents.",
     },
     {
       question: "If I rent a vehicle can I choose the chauffeur?",
@@ -32,47 +35,63 @@ const Faqs = () => {
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
-    console.log(index)
+    console.log(index);
   };
   return (
     <>
-    <div className="faq-hero">
+      <div className="faq-hero">
         <div className="text-wrapper">
-        <h1>FAQs</h1>
+          <h1>FAQs</h1>
         </div>
-    </div>
-     
-      {/* ************** FaQs Section ******************* */}
-    <section className="faq-section">
-      <h4 className="faq-subtitle">FAQs</h4>
-      <h2 className="faq-title">Frequently Asked Questions</h2>
-
-      <div className="faq-list">
-        {faqs.map((item, index) => (
-          <div className="faq-item" key={index}>
-            <button className="faq-question" onClick={() => toggleFAQ(index)}>
-              <span>Q. {item.question}</span>
-            <div className="btn-box" style={{minWidth:"20px",minHeight:"20px"}}>
-                {activeIndex === index ? (
-                <Minus size={20} style={{backgroundColor:"#000", color:"#fff", borderRadius:"50%"}}/>
-              ) : (
-                <Plus size={20} style={{backgroundColor:"var(--primaryBgColor)", color:"#fff", borderRadius:"50%"}} />
-              )}
-            </div>
-            </button>
-            {activeIndex === index && (
-              <div className={`faq-answer`}>
-                <p>{item.answer}</p>
-              </div>
-              
-            )}
-          </div>
-        ))}
       </div>
-    </section>
+
+      {/* ************** FaQs Section ******************* */}
+      <section className="faq-section">
+        <h4 className="faq-subtitle">FAQs</h4>
+        <h2 className="faq-title">Frequently Asked Questions</h2>
+
+        <div className="faq-list">
+          {faqs.map((item, index) => (
+            <div className="faq-item" key={index}>
+              <button className="faq-question" onClick={() => toggleFAQ(index)}>
+                <span>Q. {item.question}</span>
+                <div
+                  className="btn-box"
+                  style={{ minWidth: "20px", minHeight: "20px" }}
+                >
+                  {activeIndex === index ? (
+                    <Minus
+                      size={20}
+                      style={{
+                        backgroundColor: "#000",
+                        color: "#fff",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  ) : (
+                    <Plus
+                      size={20}
+                      style={{
+                        backgroundColor: "var(--primaryBgColor)",
+                        color: "#fff",
+                        borderRadius: "50%",
+                      }}
+                    />
+                  )}
+                </div>
+              </button>
+  
+                <div className={`faq-answer ${activeIndex === index ? "open" : ""} `}>
+                  <p>{item.answer}</p>
+                </div>
+            
+              
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 };
 
 export default Faqs;
-

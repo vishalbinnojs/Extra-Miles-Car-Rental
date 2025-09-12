@@ -101,6 +101,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive ? "links-a active" : "links-a"
               }
+              onClick = {()=> setIsOpen(false)}
             >
               Privacy Policy
             </NavLink>
@@ -109,6 +110,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive ? "links-a active" : "links-a"
               }
+              onClick = { () => setIsOpen(false) }
             >
               Contact
             </NavLink>
