@@ -75,16 +75,16 @@ const Home = () => {
   ];
   // Swiper car Data
   const swiperCars = [
-    { img: `../../assets/images/swiper-car1.png` },
-    { img: "../../assets/images/swiper-car2.png" },
-    { img: "../../assets/images/swiper-car3.png" },
-    { img: "../../assets/images/swiper-car4.png" },
-    { img: "../../assets/images/swiper-car5.png" },
-    { img: `../../assets/images/swiper-car1.png` },
-    { img: "../../assets/images/swiper-car2.png" },
-    { img: "../../assets/images/swiper-car3.png" },
-    { img: "../../assets/images/swiper-car4.png" },
-    { img: "../../assets/images/swiper-car5.png" },
+    { img: `/src/assets/images/swiper-car1.png` },
+    { img: "/src/assets/images/swiper-car2.png" },
+    { img: "/src/assets/images/swiper-car3.png" },
+    { img: "/src/assets/images/swiper-car4.png" },
+    { img: "/src/assets/images/swiper-car5.png" },
+    { img: `/src/assets/images/swiper-car1.png` },
+    { img: "/src/assets/images/swiper-car2.png" },
+    { img: "/src/assets/images/swiper-car3.png" },
+    { img: "/src/assets/images/swiper-car4.png" },
+    { img: "/src/assets/images/swiper-car5.png" },
   ];
 
   // Featured Car Card Data
