@@ -75,22 +75,22 @@ const Home = () => {
   ];
   // Swiper car Data
   const swiperCars = [
-    { img: `/assets/images/swiper-car1.png` },
-    { img: "/assets/images/swiper-car2.png" },
-    { img: "/assets/images/swiper-car3.png" },
-    { img: "/assets/images/swiper-car4.png" },
-    { img: "/assets/images/swiper-car5.png" },
-    { img: `/assets/images/swiper-car1.png` },
-    { img: "/assets/images/swiper-car2.png" },
-    { img: "/assets/images/swiper-car3.png" },
-    { img: "/assets/images/swiper-car4.png" },
-    { img: "/assets/images/swiper-car5.png" },
+    { img: `../../assets/images/swiper-car1.png` },
+    { img: "../../assets/images/swiper-car2.png" },
+    { img: "../../assets/images/swiper-car3.png" },
+    { img: "../../assets/images/swiper-car4.png" },
+    { img: "../../assets/images/swiper-car5.png" },
+    { img: `../../assets/images/swiper-car1.png` },
+    { img: "../../assets/images/swiper-car2.png" },
+    { img: "../../assets/images/swiper-car3.png" },
+    { img: "../../assets/images/swiper-car4.png" },
+    { img: "../../assets/images/swiper-car5.png" },
   ];
 
   // Featured Car Card Data
   const featuredCars = [
     {
-      image: "/assets/images/featured-car-1.jpg",
+      image: "/src/assets/images/featured-car-1.jpg",
       title: "BMW 740L Series",
       rating: 4.8,
       description:
@@ -100,7 +100,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/assets/images/featured-car-2.jpg",
+      image: "/src/assets/images/featured-car-2.jpg",
       title: "BMW M5 Competition",
       rating: 4.9,
       description:
@@ -110,7 +110,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/assets/images/featured-car-3.jpg",
+      image: "/src/assets/images/featured-car-3.jpg",
       title: "Mitsubishi Portan",
       rating: 4.5,
       description:
@@ -120,7 +120,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/assets/images/featured-car-1.jpg",
+      image: "/src/assets/images/featured-car-1.jpg",
       title: "BMW 740L Series",
       rating: 4.8,
       description:
@@ -130,7 +130,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/assets/images/featured-car-2.jpg",
+      image: "/src/assets/images/featured-car-2.jpg",
       title: "BMW M5 Competition",
       rating: 4.9,
       description:
@@ -140,7 +140,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/assets/images/featured-car-3.jpg",
+      image: "/src/assets/images/featured-car-3.jpg",
       title: "Mitsubishi Portan",
       rating: 4.5,
       description:
@@ -155,19 +155,19 @@ const Home = () => {
 
   const newsData = [
     {
-      img: "/assets/images/blog-image-01.jpg",
+      img: "/src/assets/images/blog-image-01.jpg",
       tag: "TRAVEL BLOG",
       date: "20 March, 2024",
       text: "10 European ski destinations you should visit this winter",
     },
     {
-      img: "/assets/images/blog-image-02.jpg",
+      img: "/src/assets/images/blog-image-02.jpg",
       tag: "COVID TRAVEL",
       date: "20 March, 2024",
       text: "Booking travel during Corona: Find who are giving service",
     },
     {
-      img: "/assets/images/blog-image-03.jpg",
+      img: "/src/assets/images/blog-image-03.jpg",
       tag: "EUROPE",
       date: "20 March, 2024",
       text: "Change your place and get the fresh air from the nature",
