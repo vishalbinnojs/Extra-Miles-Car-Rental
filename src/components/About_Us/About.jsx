@@ -10,7 +10,7 @@ import {
    FaBehance
 } from "react-icons/fa";
 import {CgFacebook} from "react-icons/cg";
-import "./about.css";
+import "./About.css";
 import aboutLambo  from "../../assets/images/about-lambo.png";
 import aboutMap from "../../assets/images/about-map.png";
 import Member1 from "../../assets/images/team-image-1.png"
