@@ -10,7 +10,7 @@ import Privacy from "./components/Privacy_Policy/Privacy";
 import Contact from "./components/Contact/Contact";
 import Faqs from "./components/FAQs/Faqs";
  import Footer from "./components/Footer/Footer";
- import Test from "./components/Test/Test"
+//  import Test from "./components/Test/Test"
 function App() {
  
 
@@ -25,7 +25,7 @@ function App() {
       <Route path="/privacy_policy" element={<Privacy/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/faqs" element={<Faqs/>}/>
-      <Route path="/test" element={<Test/>}/>
+      {/* <Route path="/test" element={<Test/>}/> */}
       </Routes>
 
       <Footer />
