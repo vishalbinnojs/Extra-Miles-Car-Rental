@@ -28,6 +28,20 @@ import SCar from "../../assets/images/home-sports-car.png";
 import Hatchback from "../../assets/images/home-hatchback.png";
 import SUV from "../../assets/images/home-suv.png";
 
+import swiperCar1 from '../../assets/images/swiper-car1.png'
+import swiperCar2 from '../../assets/images/swiper-car2.png'
+import swiperCar3 from '../../assets/images/swiper-car3.png'
+import swiperCar4 from '../../assets/images/swiper-car4.png'
+import swiperCar5 from '../../assets/images/swiper-car5.png'
+
+import featuredCar1 from '../../assets/images/featured-car-1.jpg'
+import featuredCar2 from '../../assets/images/featured-car-2.jpg'
+import featuredCar3 from '../../assets/images/featured-car-3.jpg'
+
+import blogCar1 from "../../assets/images/blog-image-01.jpg"
+import blogCar2 from "../../assets/images/blog-image-02.jpg"
+import blogCar3 from "../../assets/images/blog-image-03.jpg"
+
 import Card from "./Brand_Card/Card";
 import CarCard from "./Car_Card/CarCard";
 
@@ -75,22 +89,23 @@ const Home = () => {
   ];
   // Swiper car Data
   const swiperCars = [
-    { img: `/src/assets/images/swiper-car1.png` },
-    { img: "/src/assets/images/swiper-car2.png" },
-    { img: "/src/assets/images/swiper-car3.png" },
-    { img: "/src/assets/images/swiper-car4.png" },
-    { img: "/src/assets/images/swiper-car5.png" },
-    { img: `/src/assets/images/swiper-car1.png` },
-    { img: "/src/assets/images/swiper-car2.png" },
-    { img: "/src/assets/images/swiper-car3.png" },
-    { img: "/src/assets/images/swiper-car4.png" },
-    { img: "/src/assets/images/swiper-car5.png" },
+    { img: swiperCar1 },
+    { img: swiperCar2 },
+    { img: swiperCar3 },
+    { img: swiperCar4 },
+    { img: swiperCar5 },
+    { img: swiperCar1 },
+    { img: swiperCar2 },
+    { img: swiperCar3 },
+    { img: swiperCar4 },
+    { img: swiperCar5 }
+  
   ];
 
   // Featured Car Card Data
   const featuredCars = [
     {
-      image: "/src/assets/images/featured-car-1.jpg",
+      image: featuredCar1,
       title: "BMW 740L Series",
       rating: 4.8,
       description:
@@ -100,7 +115,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/src/assets/images/featured-car-2.jpg",
+      image: featuredCar2,
       title: "BMW M5 Competition",
       rating: 4.9,
       description:
@@ -110,7 +125,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/src/assets/images/featured-car-3.jpg",
+      image: featuredCar3,
       title: "Mitsubishi Portan",
       rating: 4.5,
       description:
@@ -120,7 +135,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/src/assets/images/featured-car-1.jpg",
+      image: featuredCar1,
       title: "BMW 740L Series",
       rating: 4.8,
       description:
@@ -130,7 +145,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/src/assets/images/featured-car-2.jpg",
+      image: featuredCar2,
       title: "BMW M5 Competition",
       rating: 4.9,
       description:
@@ -140,7 +155,7 @@ const Home = () => {
       passengers: "06",
     },
     {
-      image: "/src/assets/images/featured-car-3.jpg",
+      image: featuredCar3,
       title: "Mitsubishi Portan",
       rating: 4.5,
       description:
@@ -155,19 +170,19 @@ const Home = () => {
 
   const newsData = [
     {
-      img: "/src/assets/images/blog-image-01.jpg",
+      img: blogCar1,
       tag: "TRAVEL BLOG",
       date: "20 March, 2024",
       text: "10 European ski destinations you should visit this winter",
     },
     {
-      img: "/src/assets/images/blog-image-02.jpg",
+      img: blogCar2,
       tag: "COVID TRAVEL",
       date: "20 March, 2024",
       text: "Booking travel during Corona: Find who are giving service",
     },
     {
-      img: "/src/assets/images/blog-image-03.jpg",
+      img: blogCar3,
       tag: "EUROPE",
       date: "20 March, 2024",
       text: "Change your place and get the fresh air from the nature",
