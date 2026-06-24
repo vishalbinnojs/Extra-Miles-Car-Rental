@@ -52,19 +52,19 @@ const Home = () => {
   const carouselItems = [
     {
       tag: "CAR RENTAL",
-      title: `Find Affrdable Dream\nCars\n For Rental`,
+      title: `Find Affordable Dream\nCars\n For Rental`,
       text: `Fulfill your automotive fantasies without breaking the bank.\n&\nCheck our affordable car rentals for an opulent yet economical ride.`,
       img: `${car1}`,
     },
     {
       tag: "CAR RENTAL",
-      title: `Find Affrdable Dream\nCars\n For Rental`,
+      title: `Find Affordable Dream\nCars\n For Rental`,
       text: `Fulfill your automotive fantasies without breaking the bank.\n&\nCheck our affordable car rentals for an opulent yet economical ride.`,
       img: `${car2}`,
     },
     {
       tag: "CAR RENTAL",
-      title: `Find Affrdable Dream\nCars\n For Rental`,
+      title: `Find Affordable Dream\nCars\n For Rental`,
       text: `Fulfill your automotive fantasies without breaking the bank.\n&\nCheck our affordable car rentals for an opulent yet economical ride.`,
       img: `${car3}`,
     },
